@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- No Java/Kotlin code: android.app.NativeActivity loads libcalc.so (ARM64 Assembly). -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.musabgpt.m700"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="34" />
+
+    <application
+        android:label="ASM Calc"
+        android:icon="@drawable/ic_launcher"
+        android:hasCode="false"
+        android:extractNativeLibs="true"
+        android:theme="@android:style/Theme.Material.NoActionBar">
+
+        <activity
+            android:name="android.app.NativeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden|uiMode">
+            <meta-data android:name="android.app.lib_name" android:value="calc" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
