@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- App icon: dark rounded square, orange circle with "=" -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="#FF1C1C1E"
+        android:pathData="M10,2 L38,2 Q46,2 46,10 L46,38 Q46,46 38,46 L10,46 Q2,46 2,38 L2,10 Q2,2 10,2 Z" />
+    <path
+        android:fillColor="#FFFF9F0A"
+        android:pathData="M24,9 A15,15 0 1,1 23.99,9 Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M16,18 L32,18 L32,22 L16,22 Z M16,26 L32,26 L32,30 L16,30 Z" />
+</vector>
